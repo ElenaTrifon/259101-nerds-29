@@ -22,6 +22,12 @@
   --dark-yellow: #EAB534;
   --darkness-yellow: #E5A722;
 
+/* Catalog */
+  --catalog-dark-gray: #4D4D4D;
+  --catalog-light-gray: rgba(77, 77, 77, 0.12);
+  --catalog-light-black: rgba(0, 0, 0, 0.3);
+  --catalog-border-gray: #DBDBDB;
+
 /* Soclial icons */
   --lightness-grey: #E1E1E1;
 
@@ -88,7 +94,7 @@ background-color: var(--basic-gray);
   color: var(--light-gray-focus);
 }
 
-/* Slogans */
+/* Slogans page index*/
 
 .slogans {
   background-color: var(--basic-gray);
@@ -132,6 +138,16 @@ background-color: var(--basic-gray);
 
 .slogans-button:active {
   background-color: var(--darkness-red);
+}
+
+/* page catalog title*/
+
+.page-title {
+  font-size: 55px;
+  line-height: 55px;
+  font-weight: 500;
+  text-align: center;
+  background-color: var(--basic-gray);
 }
 
 /* Products */
@@ -230,6 +246,68 @@ background-color: var(--basic-gray);
 
 .partners-list {
   list-style: none;
+}
+
+/* Catalog list */
+.catalog-item h3 {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.catalog-item p {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+}
+
+.catalog-list a {
+  color: var(--basic-black);
+}
+
+.catalog-list a:hover {
+  color: var(--basic-light-red);
+}
+
+.catalog-list a:active {
+  color: var(--light-gray-focus);
+}
+
+.button.catalog-button {
+  background-color: var(--basic-light-red);
+}
+
+.button.catalog-button:hover {
+background-color: var(--dark-red);
+}
+
+.button.catalog-button:active {
+  background-color: var(--darkness-red)
+}
+
+.page-navigation {
+  list-style: none;
+}
+
+.page-navigation a {
+  color: var(--basic-black);
+  background-color: var(--basic-gray);
+}
+
+.page-navigation a:hover {
+  background-color: var(--light-gray);
+}
+
+.page-navigation a:active {
+  color: var(--catalog-light-black);
+  background-color: var(--darkness-gray);
+}
+
+.page-navigation-item-current a {
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+  border: 3px solid var(--catalog-border-gray);
 }
 
 /* Footer */

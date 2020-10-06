@@ -9,102 +9,105 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
-  <header>
-    <nav>
-      <a href="index.html"><img src="https://via.placeholder.com/150x100" width="150" height="100"
+<body class="page-body inner-page">
+  <header class="main-header">
+    <nav class="main-navigation">
+      <a class="main-header-logo" href="index.html"><img src="https://via.placeholder.com/150x100" width="150" height="100"
           alt="Логотип дизайн-студии Нёрдс"></a>
-      <ul>
-        <li><a href="#">Студия</a></li>
-        <li><a href="#">Клиенты</a></li>
-        <li><a>Магазин</a></li>
-        <li><a href="#">Контакты</a></li>
+      <ul class="site-navigation">
+        <li class="site-navigation-item"><a href="#">Студия</a></li>
+        <li class="site-navigation-item"><a href="#">Клиенты</a></li>
+        <li class="site-navigation-item"><a>Магазин</a></li>
+        <li class="site-navigation-item"><a href="#">Контакты</a></li>
       </ul>
-      <a href="#">Корзина</a>
+      <div class="bascket-navigation">
+        <a class="main-basket" href="#">Корзина</a>
+      </div>
     </nav>
   </header>
-  <main>
-    <h1>Магазин готовых шаблонов</h1>
+  <main class="page-catalog container">
+    <h1 class="page-title">Магазин готовых шаблонов</h1>
     <section>
-      <h2>Фильтр товаров</h2>
+      <h2 class="title-invisible">Фильтр товаров</h2>
       <!--Заголовок не будет виден-->
     </section>
-    <section>
-      <h2>Список товаров</h2>
+    <section class="catalog">
+      <h2 class="title-invisible">Список товаров</h2>
       <!--Заголовок не будет виден-->
-      <ul>
-        <li>
+      <ul class="catalog-list">
+        <li class="catalog-item">
           <img src="https://via.placeholder.com/150x100" width="150" height="100" alt="Sedona">
           <div>
             <h3><a href="#">Sedona</a></h3>
             <p>Информационный сайт <br>для туристов</p>
-            <button type="button">9900</button>
+            <button class="button catalog-button" type="button">9900</button>
           </div>
         </li>
-        <li>
+        <li class="catalog-item">
           <img src="https://via.placeholder.com/150x100" width="150" height="100" alt="Pink App">
           <div>
             <h3><a href="#">Pink App</a></h3>
             <p>Продуктовый лендинг <br>приложения для iOS и Android</p>
-            <button type="button">9900</button>
+            <button class="button catalog-button" type="button">9900</button>
           </div>
         </li>
-        <li>
+        <li class="catalog-item">
           <img src="https://via.placeholder.com/150x100" width="150" height="100" alt="Barbershop">
           <div>
             <h3><a href="#">Barbershop</a></h3>
             <p>Сайт салона красоты. <br>Для мужчин, да.</p>
-            <button type="button">9900</button>
+            <button class="button catalog-button" type="button">9900</button>
           </div>
         </li>
-        <li>
+        <li class="catalog-item">
           <img src="https://via.placeholder.com/150x100" width="150" height="100" alt="Mishka">
           <div>
             <h3><a href="#">Mishka</a></h3>
             <p>Интернет-магазин <br>вязаных игрушек</p>
-            <button type="button">9900</button>
+            <button class="button catalog-button" type="button">9900</button>
           </div>
         </li>
-        <li>
+        <li class="catalog-item">
           <img src="https://via.placeholder.com/150x100" width="150" height="100" alt="A Plus">
           <div>
             <h3><a href="#">A Plus</a></h3>
             <p>Лендинг курсов <br>повышения квалификации</p>
-            <button type="button">9900</button>
+            <button class="button catalog-button" type="button">9900</button>
           </div>
         </li>
-        <li>
+        <li class="catalog-item">
           <img src="https://via.placeholder.com/150x100" width="150" height="100" alt="Кваст">
           <div>
             <h3><a href="#">Кваст</a></h3>
             <p>Промо-сайт производителя <br>крафтового кваса</p>
-            <button type="button">9900</button>
+            <button class="button catalog-button" type="button">9900</button>
           </div>
         </li>
       </ul>
-      <ul>
-        <li><a>1</a></li>
-        <li><a href="#">2</a></li>
-        <li><a href="#">3</a></li>
-        <li><a href="#">Следующая</a></li>
+      <ul class="page-navigation">
+        <li class="page-navigation-item-current"><a>1</a></li>
+        <li class="page-navigation-item"><a href="#">2</a></li>
+        <li class="page-navigation-item"><a href="#">3</a></li>
+        <li class="page-navigation-item"><a href="#">Следующая</a></li>
       </ul>
     </section>
   </main>
-  <footer>
-    <img src="https://via.placeholder.com/150x100" width="150" height="100" alt="Карта">
-    <section>
+  <footer class="page-footer main-footer">
+    <img class="footer-map" src="https://via.placeholder.com/150x100" width="150" height="100" alt="Карта">
+    <section class="footer-contacts">
       <p>NЁRDS DESIGN STUDIO</p>
-      <address>191186, Санкт-Петербург, <br>ул. Б. Конюшенная, д. 19/8</address>
-      <a href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
-      <a href="#">Напишите нам</a>
+      <address class="footer-address">191186, Санкт-Петербург, <br>ул. Б. Конюшенная, д. 19/8</address>
+      <a class="footer-phone" href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
+      <a class="button footer-button" href="#">Напишите нам</a>
     </section>
-    <section>
-      <ul>
-        <li><a href="#"><img src="https://via.placeholder.com/150x100" width="150" height="100" alt="Вконтакте"></a>
-        </li>
-        <li><a href="#"><img src="https://via.placeholder.com/150x100" width="150" height="100" alt="Фейсбук"></a></li>
-        <li><a href="#"><img src="https://via.placeholder.com/150x100" width="150" height="100" alt="Инстаграм"></a>
-        </li>
+    <section class="footer-social">
+      <ul class="footer-social-list">
+        <li class="footer-social-item"><a href="#"><img src="https://via.placeholder.com/150x100" width="150"
+          height="150" alt="Вконтакте"></a></li>
+        <li class="footer-social-item"><a href="#"><img src="https://via.placeholder.com/150x100" width="150"
+          height="150" alt="Фейсбук"></a></li>
+        <li class="footer-social-item"><a href="#"><img src="https://via.placeholder.com/150x100" width="150"
+          height="150" alt="Инстаграм"></a></li>
       </ul>
       <p>Давайте дружить, это выгодно!</p>
       <p>Скидка 10% для друзей из социальных сетей.</p>
