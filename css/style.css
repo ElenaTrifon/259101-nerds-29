@@ -30,6 +30,7 @@
 
 /* Soclial icons */
   --lightness-grey: #E1E1E1;
+  --more-light-gray: rgba(255, 255, 255, 0.3);
 
 /* footer-contacts */
   --darkness-gray: #666666;
@@ -248,7 +249,23 @@ background-color: var(--basic-gray);
   list-style: none;
 }
 
+.partners-item {
+  opacity: 0.2;
+}
+
+.partners-item:hover {
+  opacity: 1;
+}
+
+.partners-item:active {
+  opacity: 0.1;
+}
+
 /* Catalog list */
+.catalog-list {
+  list-style: none;
+}
+
 .catalog-item h3 {
   font-size: 18px;
   line-height: 30px;
@@ -326,6 +343,21 @@ background-color: var(--dark-red);
 
 .footer-social-list {
   list-style: none;
+}
+
+.footer-social-item {
+  background-color: var(--lightness-grey);
+  width: 81px;
+  height: 81px;
+  border-radius: 50%;
+}
+
+.footer-social-item:hover {
+  background-color: var(--dark-red);
+}
+
+.footer-social-item:active {
+  background-color: var(--darkness-red);
 }
 
 .footer-social p:first-of-type {
