@@ -387,14 +387,25 @@ margin: 0;
   list-style: none;
 }
 
-.description-history-list {
-  display: grid;
-  grid-template-columns: 98px 98px 98px;
-  grid-template-rows: 64px 37px;
-  column-gap: 22px;
-  row-gap: 11px;
-  margin: 0 auto;
-  padding: 0;
+.description-order-item {
+  position: relative;
+}
+
+.description-order-item::before {
+  position: absolute;
+  content: '';
+  width: 25px;
+  height: 2px;
+  left: -40px;
+  top: 10px;
+  background-color: var(--basic-light-red);
+}
+
+.description-history-list caption {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 .description-history-list-percent {
@@ -446,6 +457,21 @@ margin: 0;
 .partners-item:active {
   opacity: 0.1;
 }
+
+.partners-item {
+  position: relative;
+}
+
+.partners-item:not(:last-child)::after {
+  position: absolute;
+  content: "";
+  width: 2px;
+  height: 52px;
+  right: 48px;
+  top: 10px;
+  background-color: var(--basic-black);
+}
+
 
 /* Catalog list */
 .catalog-list {
@@ -523,12 +549,15 @@ background-color: var(--dark-red);
 }
 
 .footer-map {
-  background-image: url("/img/map-1.jpg");
+  background-image: url("../img/map-1-1.jpg");
   width: 1440px;
   height: 416px;
+  margin: 0 auto;
+  padding: 0;
 }
 
 .footer-contacts {
+  position: absolute;
   width: 319px;
   height: 308px;
   background-color: var(--basic-white);
