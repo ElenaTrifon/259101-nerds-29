@@ -4,114 +4,142 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Нёрдс</title>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page-body inner-page">
   <header class="main-header">
-    <nav class="main-navigation">
-      <a class="main-header-logo" href="index.html"><img src="img/nerds-logo.svg" width="160" height="66"
-          alt="Логотип дизайн-студии Нёрдс"></a>
-      <ul class="site-navigation">
-        <li class="site-navigation-item"><a href="#">Студия</a></li>
-        <li class="site-navigation-item"><a href="#">Клиенты</a></li>
-        <li class="site-navigation-item"><a>Магазин</a></li>
-        <li class="site-navigation-item"><a href="#">Контакты</a></li>
-      </ul>
-      <div class="bascket-navigation">
-        <a class="main-basket" href="#">Корзина</a>
+    <h1 class="title-invisible">Нёрдс</h1>
+    <!--Заголовок не будет виден-->
+    <nav class="main-navigation main-navigation-catalog">
+      <div class="main-navigation-wrapper">
+        <a class="main-header-logo" href="index.html"><img src="img/nerds-logo.svg" width="160" height="66"
+            alt="Логотип дизайн-студии Нёрдс"></a>
+        <ul class="site-navigation">
+          <li class="site-navigation-item"><a href="#">Студия</a></li>
+          <li class="site-navigation-item"><a href="#">Клиенты</a></li>
+          <li class="site-navigation-item"><a href="#">Магазин</a></li>
+          <li class="site-navigation-item"><a href="#">Контакты</a></li>
+        </ul>
+        <div class="bascket-navigation">
+          <a class="main-basket" href="#">Корзина</a>
+        </div>
       </div>
     </nav>
   </header>
   <main class="page-catalog container">
-    <h1 class="page-title">Магазин готовых шаблонов</h1>
-    <section>
-      <h2 class="title-invisible">Фильтр товаров</h2>
-      <!--Заголовок не будет виден-->
-    </section>
-    <section class="catalog">
-      <h2 class="title-invisible">Список товаров</h2>
-      <!--Заголовок не будет виден-->
-      <ul class="catalog-list">
-        <li class="catalog-item">
-          <img src="img/img-sedona 1.jpg" width="358" height="578" alt="Sedona">
-          <div>
-            <h3><a href="#">Sedona</a></h3>
-            <p>Информационный сайт <br>для туристов</p>
-            <button class="button catalog-button" type="button">9900</button>
-          </div>
-        </li>
-        <li class="catalog-item">
-          <img src="img/img-pink 1.jpg" width="378" height="578" alt="Pink App">
-          <div>
-            <h3><a href="#">Pink App</a></h3>
-            <p>Продуктовый лендинг <br>приложения для iOS и Android</p>
-            <button class="button catalog-button" type="button">9900</button>
-          </div>
-        </li>
-        <li class="catalog-item">
-          <img src="img/img-barbershop 1.jpg" width="378" height="578" alt="Barbershop">
-          <div>
-            <h3><a href="#">Barbershop</a></h3>
-            <p>Сайт салона красоты. <br>Для мужчин, да.</p>
-            <button class="button catalog-button" type="button">9900</button>
-          </div>
-        </li>
-        <li class="catalog-item">
-          <img src="img/img-mishka 1.jpg" width="378" height="578" alt="Mishka">
-          <div>
-            <h3><a href="#">Mishka</a></h3>
-            <p>Интернет-магазин <br>вязаных игрушек</p>
-            <button class="button catalog-button" type="button">9900</button>
-          </div>
-        </li>
-        <li class="catalog-item">
-          <img src="img/img-aplus 1.jpg" width="378" height="578" alt="A Plus">
-          <div>
-            <h3><a href="#">A Plus</a></h3>
-            <p>Лендинг курсов <br>повышения квалификации</p>
-            <button class="button catalog-button" type="button">9900</button>
-          </div>
-        </li>
-        <li class="catalog-item">
-          <img src="img/img-kvast 1.jpg" width="378" height="578" alt="Кваст">
-          <div>
-            <h3><a href="#">Кваст</a></h3>
-            <p>Промо-сайт производителя <br>крафтового кваса</p>
-            <button class="button catalog-button" type="button">9900</button>
-          </div>
-        </li>
-      </ul>
-      <ul class="page-navigation">
-        <li class="page-navigation-item-current"><a>1</a></li>
-        <li class="page-navigation-item"><a href="#">2</a></li>
-        <li class="page-navigation-item"><a href="#">3</a></li>
-        <li class="page-navigation-item"><a href="#">Следующая</a></li>
-      </ul>
-    </section>
+    <div class="page-title-wrapper">
+      <h1 class="page-title">Магазин готовых шаблонов</h1>
+    </div>
+    <div class="catalog-wrapper">
+      <section class="filters">
+        <h2>Фильтр товаров</h2>
+        <p>Стоимость:</p>
+        <!--Заголовок не будет виден-->
+      </section>
+      <section class="catalog">
+        <h2 class="title-invisible">Список товаров</h2>
+        <!--Заголовок не будет виден-->
+        <ul class="catalog-list">
+          <li class="catalog-item">
+            <img src="img/img-sedona 1.jpg" width="358" height="578" alt="Sedona">
+            <div>
+              <h3><a href="#">Sedona</a></h3>
+              <p>Информационный сайт <br>для туристов</p>
+              <button class="button catalog-button" type="button">9900</button>
+            </div>
+          </li>
+          <li class="catalog-item">
+            <img src="img/img-pink 1.jpg" width="378" height="578" alt="Pink App">
+            <div>
+              <h3><a href="#">Pink App</a></h3>
+              <p>Продуктовый лендинг <br>приложения для iOS и Android</p>
+              <button class="button catalog-button" type="button">9900</button>
+            </div>
+          </li>
+          <li class="catalog-item">
+            <img src="img/img-barbershop 1.jpg" width="378" height="578" alt="Barbershop">
+            <div>
+              <h3><a href="#">Barbershop</a></h3>
+              <p>Сайт салона красоты. <br>Для мужчин, да.</p>
+              <button class="button catalog-button" type="button">9900</button>
+            </div>
+          </li>
+          <li class="catalog-item">
+            <img src="img/img-mishka 1.jpg" width="378" height="578" alt="Mishka">
+            <div>
+              <h3><a href="#">Mishka</a></h3>
+              <p>Интернет-магазин <br>вязаных игрушек</p>
+              <button class="button catalog-button" type="button">9900</button>
+            </div>
+          </li>
+          <li class="catalog-item">
+            <img src="img/img-aplus 1.jpg" width="378" height="578" alt="A Plus">
+            <div>
+              <h3><a href="#">A Plus</a></h3>
+              <p>Лендинг курсов <br>повышения квалификации</p>
+              <button class="button catalog-button" type="button">9900</button>
+            </div>
+          </li>
+          <li class="catalog-item">
+            <img src="img/img-kvast 1.jpg" width="378" height="578" alt="Кваст">
+            <div>
+              <h3><a href="#">Кваст</a></h3>
+              <p>Промо-сайт производителя <br>крафтового кваса</p>
+              <button class="button catalog-button" type="button">9900</button>
+            </div>
+          </li>
+        </ul>
+        <ul class="page-navigation">
+          <li class="page-navigation-item-current"><a>1</a></li>
+          <li class="page-navigation-item"><a href="#">2</a></li>
+          <li class="page-navigation-item"><a href="#">3</a></li>
+          <li class="page-navigation-item"><a href="#">Следующая</a></li>
+        </ul>
+      </section>
+    </div>
   </main>
   <footer class="page-footer main-footer">
-    <img class="footer-map" src="img/map 1.jpg" width="1440" height="416" alt="Карта">
-    <img class="map-marker" src="img/map-marker 1.png" width="231" height="190" alt="Точка на карте">
-    <section class="footer-contacts">
-      <p>NЁRDS DESIGN STUDIO</p>
-      <address class="footer-address">191186, Санкт-Петербург, <br>ул. Б. Конюшенная, д. 19/8</address>
-      <a class="footer-phone" href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
-      <a class="button footer-button" href="#">Напишите нам</a>
-    </section>
+    <div class="footer-map">
+      <section class="footer-contacts">
+        <div class="footer-contacts-wrapper">
+          <div class="footer-contacts-title">
+            <p>NЁRDS DESIGN STUDIO</p>
+          </div>
+          <div class="footer-address-container">
+            <address class="footer-address">191186, Санкт-Петербург, <br>ул. Б. Конюшенная, д. 19/8</address>
+          </div>
+          <div class="footer-phone-container">
+            <a class="footer-phone" href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
+          </div>
+        </div>
+        <div class="footer-button-container">
+          <a class="footer-button" href="#">Напишите нам</a>
+        </div>
+      </section>
+    </div>
     <section class="footer-social">
       <ul class="footer-social-list">
-        <li class="footer-social-item"><a href="#"><div class="footer-social-item"><img src="img/vk-icon.svg" width="26"
-              height="15" alt="Вконтакте"></div></a></li>
-        <li class="footer-social-item"><a href="#"><div class="footer-social-item"><img src="img/fb-icon.svg" width="12"
-              height="22" alt="Фейсбук"></div></a></li>
-        <li class="footer-social-item"><a href="#"><div class="footer-social-item"><img src="img/insta-icon.svg" width="21"
-              height="21" alt="Инстаграм"></div></a></li>
+        <li class="footer-social-item"><a href="#">
+            <div class="footer-social-item"><img class="vk" src="img/vk-icon.svg" width="26" height="15"
+                alt="Вконтакте"></div>
+          </a></li>
+        <li class="footer-social-item"><a href="#">
+            <div class="footer-social-item"><img class="fb" src="img/fb-icon.svg" width="12" height="22" alt="Фейсбук">
+            </div>
+          </a></li>
+        <li class="footer-social-item"><a href="#">
+            <div class="footer-social-item"><img class="inst" src="img/insta-icon.svg" width="21" height="21"
+                alt="Инстаграм"></div>
+          </a></li>
       </ul>
-      <p>Давайте дружить, это выгодно!</p>
-      <p>Скидка 10% для друзей из социальных сетей.</p>
+      <div class="footer-description">
+        <p>Давайте дружить, это выгодно!</p>
+        <p>Скидка 10% для друзей из социальных сетей.</p>
+      </div>
     </section>
   </footer>
 
