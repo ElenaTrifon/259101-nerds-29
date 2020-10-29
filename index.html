@@ -12,7 +12,7 @@
 
 <body class="page-body">
   <header class="main-header">
-    <h1 class="title-invisible">Нёрдс</h1>
+    <h1 class="title-display-none">Нёрдс</h1>
     <!--Заголовок не будет виден-->
     <nav class="main-navigation">
       <div class="main-navigation-wrapper">
@@ -107,7 +107,7 @@
         </li>
       </ul>
     </section>
-    <hr class="break1">
+    <hr class="break break1">
     <section class="description">
       <h2 class="title-invisible">Наше описание</h2>
       <!--Заголовок не будет виден-->
@@ -145,22 +145,26 @@
     </section>
 
     <section class="partners-main">
-      <h2 class="title-invisible">Наши партнеры</h2>
+      <h2 class="title-display-none">Наши партнеры</h2>
       <!--Заголовок не будет виден-->
       <div class="partners">
-        <div class="break-line"></div>
+        <!--<div class="break-line"></div>-->
+        <hr class="break break2">
         <ul class="partners-list">
-          <li class="partners-item"><a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/html-academy.png"
-                width="199" height="68" alt="Html academy"></a></li>
-          <li class="partners-item-line"></li>
-          <li class="partners-item"><a href="#"><img src="img/borodinski.png" width="209" height="90"
+          <li class="partners-item html-academy"><a href="https://htmlacademy.ru/intensive/htmlcss"><img
+                src="img/html-academy.png" width="199" height="68" alt="Html academy"></a></li>
+
+          <li class="partners-item borodinski"><a href="#"><img src="img/borodinski.png" width="209" height="90"
                 alt="Borodinski"></a></li>
-          <li class="partners-item-line"></li>
-          <li class="partners-item"><a href="#"><img src="img/pink.png" width="185" height="52" alt="Pink"></a></li>
-          <li class="partners-item-line"></li>
-          <li class="partners-item"><a href="#"><img src="img/mishka.png" width="173" height="84" alt="Mishka"></a></li>
+
+          <li class="partners-item pink"><a href="#"><img src="img/pink.png" width="185" height="52" alt="Pink"></a>
+          </li>
+
+          <li class="partners-item mishka"><a href="#"><img src="img/mishka.png" width="173" height="84"
+                alt="Mishka"></a></li>
         </ul>
-        <div class="break-line"></div>
+        <hr class="break break3">
+        <!--<div class="break-line"></div>-->
       </div>
     </section>
   </main>
@@ -184,24 +188,33 @@
         </div>
       </section>
     </div>
-    <section class="footer-social">
-      <ul class="footer-social-list">
-        <li class="footer-social-item"><a href="#">
-            <div class="footer-social-item-flex"><img class="vk" src="img/vk-icon.svg" width="26" height="15"
-                alt="Вконтакте"></div>
-          </a></li>
-        <li class="footer-social-item"><a href="#">
-            <div class="footer-social-item-flex"><img class="fb" src="img/fb-icon.svg" width="12" height="22" alt="Фейсбук">
-            </div>
-          </a></li>
-        <li class="footer-social-item"><a href="#">
-            <div class="footer-social-item-flex"><img class="inst" src="img/insta-icon.svg" width="21" height="21"
-                alt="Инстаграм"></div>
-          </a></li>
-      </ul>
-      <div class="footer-description">
-        <p>Давайте дружить, это выгодно!</p>
-        <p>Скидка 10% для друзей из социальных сетей.</p>
+    <section class="footer-social-wrapper">
+      <div class="footer-social">
+        <ul class="footer-social-list">
+          <li class="footer-social-item">
+            <a href="#">
+              <div class="footer-social-item-flex"><img class="vk" src="img/vk-icon.svg" width="26" height="15"
+                  alt="Вконтакте"></div>
+            </a>
+          </li>
+          <li class="footer-social-item">
+            <a href="#">
+              <div class="footer-social-item-flex"><img class="fb" src="img/fb-icon.svg" width="12" height="22"
+                  alt="Фейсбук">
+              </div>
+            </a>
+          </li>
+          <li class="footer-social-item">
+            <a href="#">
+              <div class="footer-social-item-flex"><img class="inst" src="img/insta-icon.svg" width="21" height="21"
+                  alt="Инстаграм"></div>
+            </a>
+          </li>
+        </ul>
+        <div class="footer-description">
+          <p>Давайте дружить, это выгодно!</p>
+          <p>Скидка 10% для друзей из социальных сетей.</p>
+        </div>
       </div>
     </section>
   </footer>
