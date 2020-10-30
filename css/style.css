@@ -87,6 +87,10 @@ img {
 
 /* Main navigation */
 
+.main-header {
+  background-color: var(--basic-gray);
+}
+
 .main-navigation-wrapper {
   display: flex;
   flex-direction: row;
@@ -94,6 +98,8 @@ img {
   width: 1157px;
   margin: 0 auto;
   align-items: center;
+  margin-top: 49px;
+
 }
 
 .site-navigation {
@@ -521,16 +527,6 @@ margin: 0;
   background-color: var(--basic-gray);
 }
 
-/*
-.break-line {
-  width: 1158px;
-  height: 2px;
-  background-color: var(--basic-gray);
-  margin: 0 auto;
-}
-*/
-
-
 .partners-list {
   list-style: none;
   display: flex;
@@ -543,27 +539,6 @@ margin: 0;
   margin: 0 auto;
   padding: 0;
 }
-
-
-/*
-.partners-list {
-  list-style: none;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  width: 1157px;
-  margin: 0 auto;
-  padding: 0;
-}
-*/
-
-
-/*
-.partners-item-line {
-  height: 52px;
-  width: 2px;
-  background-color: var(--basic-gray);
-}
-*/
 
 .partners-item a {
   display: block;
@@ -619,33 +594,6 @@ margin: 0;
   background-color: var(--basic-gray);
 }
 
-/* Grid for catalog */
-
-.catalog-wrapper {
-  display: grid;
-  grid-template-columns: 260px 1fr;
-  gap: 140px;
-  align-content: start;
-  width: 1157px;
-  margin: 0 auto;
-  padding: 0;
-}
-
-.catalog-list {
-  display: grid;
-  grid-template-columns: 360px 360px;
-  gap: 40px;
-  margin: 0 auto;
-  padding: 0;
-}
-
-.price-filter {
-  grid-column-start: 1;
-  grid-column-end: 3;
-}
-
-
-
 /* Catalog navigation */
 
 .site-navigation-item-current {
@@ -679,20 +627,61 @@ margin: 0;
 
 /* Catalog list */
 
+.catalog-wrapper {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: 140px;
+  align-content: start;
+  width: 1157px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.catalog-list {
+  display: grid;
+  grid-template-columns: 360px 360px;
+  gap: 40px;
+  margin: 0 auto;
+  padding: 0;
+}
+
 .catalog-list {
   list-style: none;
 }
 
-.picture-nav {
-  background-image: url("../img/browser.png");
-  width: 360px;
-  height: 40px;
-  background-repeat: no-repeat;
-  text-align: center;
+.price-filter {
+  grid-column-start: 1;
+  grid-column-end: 3;
 }
 
 .catalog-item img {
   border: 1px solid var(--catalog-border-dark-gray);
+  border-radius: 0 0 1% 1%;
+}
+
+.catalog-item {
+  position: relative;
+}
+
+.catalog-item::before {
+  content: '';
+  width: 360px;
+  height: 40px;
+  background-image: url("../img/browser.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  position: absolute;
+  opacity: 0.12;
+  top: -40px;
+}
+
+.catalog-price {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 360px;
+  height: 231px;
+  background-color: var(--basic-gray);
   border-radius: 0 0 1% 1%;
 }
 
@@ -701,12 +690,18 @@ margin: 0;
   line-height: 30px;
   font-weight: 700;
   text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+  margin-top: 26px;
 }
 
 .catalog-item p {
   font-size: 16px;
   line-height: 18px;
   font-weight: 400;
+  text-align: center;
+  margin: 0;
+  margin-top: 12px;
 }
 
 .catalog-list a {
@@ -721,8 +716,15 @@ margin: 0;
   color: var(--light-gray-focus);
 }
 
+.button-wrapper {
+  margin-top: 32px;
+}
+
 .button.catalog-button {
   background-color: var(--basic-light-red);
+  width: 200px;
+  height: 50px;
+  border: none;
 }
 
 .button.catalog-button:hover {
@@ -733,13 +735,24 @@ background-color: var(--dark-red);
   background-color: var(--darkness-red)
 }
 
+/* catalog page navigation */
+
 .page-navigation {
+  grid-column-start: 2;
   list-style: none;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 50px 50px 50px 260px;
+  gap: 11px;
+  margin-left: -40px;
+  margin-bottom: 60px;
 }
 
 .page-navigation a {
   color: var(--basic-black);
   background-color: var(--basic-gray);
+  display: block;
+  height: 50px;
 }
 
 .page-navigation a:hover {
@@ -755,7 +768,10 @@ background-color: var(--dark-red);
   color: var(--basic-black);
   background-color: var(--basic-white);
   border: 3px solid var(--catalog-border-gray);
+  width: 44px;
+  height: 44px;
 }
+
 
 /* Footer */
 
@@ -844,19 +860,17 @@ background-color: var(--dark-red);
 }
 
 .footer-social-list {
+  display: grid;
   list-style: none;
   text-align: center;
   margin: 0 auto;
   padding: 0;
-  display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 9px;
 }
 
 .footer-social-item {
   background-color: var(--lightness-grey);
-  width: 81px;
-  height: 81px;
   border-radius: 50%;
 }
 
