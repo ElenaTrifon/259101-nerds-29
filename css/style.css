@@ -640,7 +640,8 @@ margin: 0;
 .catalog-list {
   display: grid;
   grid-template-columns: 360px 360px;
-  gap: 40px;
+  row-gap: 71px;
+  column-gap: 42px;
   margin: 0 auto;
   padding: 0;
 }
@@ -735,7 +736,7 @@ background-color: var(--dark-red);
   background-color: var(--darkness-red)
 }
 
-/* catalog page navigation */
+/* Catalog page navigation */
 
 .page-navigation {
   grid-column-start: 2;
