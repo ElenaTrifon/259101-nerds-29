@@ -661,7 +661,7 @@ margin: 0;
 }
 
 .catalog-item {
-  position: relative;
+
 }
 
 .catalog-item::before {
@@ -676,16 +676,25 @@ margin: 0;
   top: -40px;
 }
 
-.catalog-price {
-  display: none;
-}
-
-.catalog-price:hover {
+.catalog-item:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 360px;
   height: 231px;
+  background-color: var(--basic-gray);
+  border-radius: 0 0 1% 1%;
+  position: relative;
+}
+
+.catalog-price {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 360px;
+  height: 231px;
+  position: absolute;
+  top: 348px;
   background-color: var(--basic-gray);
   border-radius: 0 0 1% 1%;
 }
