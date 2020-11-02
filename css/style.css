@@ -677,6 +677,10 @@ margin: 0;
 }
 
 .catalog-price {
+  display: none;
+}
+
+.catalog-price:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
