@@ -68,8 +68,17 @@ img {
   display: none;
 }
 
-.title-invisible {
-  visibility: hidden;
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 /* Grid */
@@ -170,6 +179,21 @@ margin: 0;
   color: var(--light-gray-focus);
 }
 
+.main-basket {
+  position: relative;
+}
+
+.main-basket::before {
+  content: '';
+  width: 15px;
+  height: 15px;
+  background-image: url("../img/cart-icon.svg");
+  background-repeat: no-repeat;
+  position: absolute;
+  left: -30px;
+  top: 1px;
+}
+
 /* Slogans page index*/
 
 .slogans-wrapper {
@@ -177,6 +201,7 @@ margin: 0;
   grid-template-columns: 1fr;
   width: 1157px;
   margin: 0 auto;
+  margin-top: 10px;
 }
 
 .slider-one,
@@ -186,6 +211,11 @@ margin: 0;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+}
+
+.slider-two,
+.slider-three {
+  display: none;
 }
 
 .slogans {
@@ -216,6 +246,7 @@ margin: 0;
 
 .slider-one-picture {
   background-image: url("../img/nerds-index-slide1-1.png");
+  background-repeat: no-repeat;
   width: 760px;
   height: 431px;
 }
@@ -236,6 +267,7 @@ margin: 0;
 
 .slider-two-picture {
   background-image: url("../img/nerds-index-slide2-1.png");
+  background-repeat: no-repeat;
   width: 760px;
   height: 431px;
   margin-left: -120px;
@@ -257,6 +289,7 @@ margin: 0;
 
 .slider-three-picture {
   background-image: url("../img/nerds-index-slide3-1.png");
+  background-repeat: no-repeat;
   width: 760px;
   height: 431px;
   margin-left: -10px;
@@ -661,7 +694,7 @@ margin: 0;
 }
 
 .catalog-item {
-
+  position: relative
 }
 
 .catalog-item::before {
@@ -676,8 +709,24 @@ margin: 0;
   top: -40px;
 }
 
-.catalog-item:hover {
+.catalog-item:hover::before {
+  content: '';
+  width: 360px;
+  height: 40px;
+  background-image: url("../img/browser.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  position: absolute;
+  opacity: 1;
+  top: -40px;
+  transition: 0.5s;
+}
+
+.catalog-item:hover .catalog-price {
   display: flex;
+}
+
+.catalog-item:hover {
   flex-direction: column;
   align-items: center;
   width: 360px;
@@ -685,10 +734,11 @@ margin: 0;
   background-color: var(--basic-gray);
   border-radius: 0 0 1% 1%;
   position: relative;
+  transition: 0.5s;
 }
 
 .catalog-price {
-  display: flex;
+  display: none;
   flex-direction: column;
   align-items: center;
   width: 360px;
@@ -765,8 +815,15 @@ background-color: var(--dark-red);
 .page-navigation a {
   color: var(--basic-black);
   background-color: var(--basic-gray);
-  display: block;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  display: flex;
   height: 50px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
 }
 
 .page-navigation a:hover {
