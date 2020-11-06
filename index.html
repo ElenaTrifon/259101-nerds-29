@@ -96,7 +96,7 @@
         <li class="products-item">
           <img src="img/illustration-2 1.png" width="300" height="146" alt="Приложения">
           <h3>Приложения</h3>
-          <p>Покорите топ-10 приложений <br>в App Store и Google Play</p>
+          <p>Покорите топ-10 приложений <br>в AppStore и Google Play</p>
           <a class="button button-app" href="#">Заказать</a>
         </li>
         <li class="products-item">
@@ -112,7 +112,7 @@
       <h2 class="visually-hidden">Наше описание</h2>
       <!--Заголовок не будет виден-->
       <div class="description-studio">
-        <p>Мы - маленькая, но гордая <br>дизайн-студия из Краснодара.</p>
+        <p>Мы — маленькая, но гордая <br>дизайн-студия из Краснодара.</p>
         <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет
           <br>превыше креатива. Работаем не
           покладая рук, как роботы.</p>
@@ -143,7 +143,6 @@
         </table>
       </div>
     </section>
-
     <section class="partners-main">
       <h2 class="visually-hidden">Наши партнеры</h2>
       <!--Заголовок не будет виден-->
@@ -180,9 +179,7 @@
             <a class="footer-phone" href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
           </div>
         </div>
-        <div class="footer-button-container">
-          <a class="footer-button" href="#">Напишите нам</a>
-        </div>
+        <a class="footer-button" href="#">Напишите нам</a>
       </section>
     </div>
     <section class="footer-social-wrapper">
@@ -214,6 +211,29 @@
       </div>
     </section>
   </footer>
+  <section class="modal-login">
+    <div class="modal-login-wrapper">
+      <div class="modal-title-wrapper">
+        <h2 class="modal-title">Напишите нам</h2>
+        <button class="modal-close" type="button" aria-label="Закрыть"></button>
+      </div>
+      <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+        <p class="user-name">
+          <label class="field" for="login-name">Ваше имя:</label>
+          <input class="login-user" id="login-name" type="text" name="name" placeholder="Имя Фамилия">
+        </p>
+        <p class="user-email">
+          <label class="field" for="login-email">Ваш email:</label>
+          <input class="login-user" id="login-email" type="email" name="email" placeholder="email@example.com">
+        </p>
+        <p class="user-test-aria">
+          <label class="field" for="text-aria">Текст письма:</label>
+          <input class="user-text" id="text-aria" type="text" name="text" placeholder="В свободной форме">
+        </p>
+        <button class="button-send" type="submit"><div class="opacity">Отправить</div></button>
+      </form>
+    </div>
+  </section>
 </body>
 
 </html>
