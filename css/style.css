@@ -708,7 +708,7 @@ margin: 0;
   background-color: var(--basic-gray);
 }
 
-/* Catalog navigation */
+/* Catalog navigation top */
 
 .site-navigation-item-current {
   position: relative;
@@ -759,6 +759,7 @@ margin: 0;
   margin: 0 auto;
   padding: 0;
   list-style: none;
+  margin-top: 90px;
 }
 
 .price-filter {
@@ -769,10 +770,11 @@ margin: 0;
 .catalog-item img {
   border: 1px solid var(--catalog-border-more-dark-gray);
   border-radius: 0 0 5px 5px;
+  vertical-align:bottom;
 }
 
 .catalog-item {
-  position: relative
+  position: relative;
 }
 
 .catalog-item::before {
@@ -807,7 +809,6 @@ margin: 0;
   flex-direction: column;
   align-items: center;
   width: 360px;
-  height: 231px;
   background-color: var(--basic-gray);
   border-radius: 0 0 5px 5px;
   position: relative;
@@ -818,9 +819,8 @@ margin: 0;
   flex-direction: column;
   align-items: center;
   width: 360px;
-  height: 231px;
   position: absolute;
-  top: 348px;
+  top: 350px;
   background-color: var(--basic-gray);
   border-radius: 0 0 5px 5px;
 }
@@ -1417,6 +1417,7 @@ margin: 0;
   margin: 0 auto;
   margin-bottom: 15px;
   box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.4);
+  display: none;
 }
 
 .modal-close {
