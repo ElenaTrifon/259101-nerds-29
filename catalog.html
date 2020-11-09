@@ -38,13 +38,88 @@
       <section class="filters">
         <h2 class="visually-hidden">Фильтр товаров</h2>
         <!--Заголовок не будет виден-->
-        <p>Стоимость:</p>
+        <form method="get" action="https://echo.htmlacademy.ru">
+          <fieldset class="filter-item">
+            <legend>Стоимость:</legend>
+            <div class="range-filter">
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar" style="width: 60%; margin-left: 5%"></div>
+                </div>
+                <div class="toggle toggle-min" tabindex="0" style="left: 7%"></div>
+                <div class="toggle toggle-max" tabindex="0" style="left: 62%"></div>
+              </div>
+              <div class="price-controls">
+                <label class="min-price">
+                  от <input type="number" name="min-price" value="0">
+                </label>
+                <label class="max-price">
+                  до <input type="number" name="max-price" value="15000">
+                </label>
+              </div>
+            </div>
+          </fieldset>
+          <fieldset class="filter-item filter-item-first">
+            <legend>Сетка:</legend>
+            <ul class="filter-features-list">
+              <li class="filter-option filter-radio">
+                <input class="visually-hidden filter-input-radio filter-input" type="radio" name="product-group" value="shaving" id="filter-shave">
+                <label for="filter-shave">Адаптивная</label>
+              </li>
+              <li class="filter-option filter-radio">
+                <input class="visually-hidden filter-input-radio filter-input" type="radio" name="product-group" value="hair-care" id="filter-care" checked>
+                <label for="filter-care">Фиксированная</label>
+              </li>
+              <li class="filter-option filter-radio">
+                <input class="visually-hidden filter-input-radio filter-input" type="radio" name="product-group" value="accessories" id="filter-accessories">
+                <label for="filter-accessories">Резиновая</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="filter-item filter-item-second">
+            <legend>Особенности:</legend>
+            <ul class="filter-features-list">
+              <li class="filter-option filter-checkbox">
+                <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="features-slider" id="filter-slider" checked>
+                <label for="filter-slider">Слайдер</label>
+              </li>
+              <li class="filter-option filter-checkbox">
+                <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="features-block-features" id="filter-block-features" checked>
+                <label for="filter-block-features">Блок преимуществ</label>
+              </li>
+              <li class="filter-option filter-checkbox">
+                <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="features-news" id="filter-news" checked>
+                <label for="filter-news">Новости</label>
+              </li>
+              <li class="filter-option filter-checkbox">
+                <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="features-gallery" id="filter-gallery" checked>
+                <label for="filter-gallery">Галерея</label>
+              </li>
+              <li class="filter-option filter-checkbox">
+                <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="features-box" id="filter-box" checked>
+                <label for="filter-box">Корзина</label>
+              </li>
+            </ul>
+          </fieldset>
+          <button type="submit" class="filter-button button">Показать</button>
+        </form>
       </section>
       <section class="catalog">
         <h2 class="visually-hidden">Список товаров</h2>
         <!--Заголовок не будет виден-->
         <ul class="catalog-list">
-          <p class="price-filter">Сортировать:</p>
+          <div class="price-filter">
+            <p>Сортировать:</p>
+            <ul class="price-filter-list">
+              <li class="price-filter-item price-filter-item-current"><a href="#">По цене</a></li>
+              <li class="price-filter-item"><a href="#">По типу</a></li>
+              <li class="price-filter-item"><a href="#">По названию</a></li>
+            </ul>
+            <div class="up-down-button">
+              <button class="up" type="button" aria-label="Вниз"></button>
+              <button class="down" type="button" aria-label="Вверх"></button>
+            </div>
+          </div>
           <li class="catalog-item">
             <img src="img/img-sedona.jpg" width="358" height="578" alt="Sedona">
             <div class="catalog-price">
