@@ -37,7 +37,7 @@
       <section class="filters">
         <h2 class="visually-hidden">Фильтр товаров</h2>
         <!--Заголовок не будет виден-->
-        <form method="get" action="https://echo.htmlacademy.ru">
+        <form method="get" action="https://echo.htmlacademy.ru" target="_blank">
           <fieldset class="filter-item">
             <legend>Стоимость:</legend>
             <div class="range-filter">
@@ -63,18 +63,18 @@
             <ul class="filter-features-list">
               <li class="filter-option filter-radio">
                 <input class="visually-hidden filter-input-radio filter-input" type="radio" name="product-group"
-                  value="shaving" id="filter-shave">
-                <label for="filter-shave">Адаптивная</label>
+                  value="adaptive" id="filter-adaptive" checked>
+                <label for="filter-adaptive">Адаптивная</label>
               </li>
               <li class="filter-option filter-radio">
                 <input class="visually-hidden filter-input-radio filter-input" type="radio" name="product-group"
-                  value="hair-care" id="filter-care" checked>
-                <label for="filter-care">Фиксированная</label>
+                  value="fix" id="filter-fix">
+                <label for="filter-fix">Фиксированная</label>
               </li>
               <li class="filter-option filter-radio">
                 <input class="visually-hidden filter-input-radio filter-input" type="radio" name="product-group"
-                  value="accessories" id="filter-accessories">
-                <label for="filter-accessories">Резиновая</label>
+                  value="stretch" id="filter-stretch">
+                <label for="filter-stretch">Резиновая</label>
               </li>
             </ul>
           </fieldset>
@@ -88,7 +88,7 @@
               </li>
               <li class="filter-option filter-checkbox">
                 <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox"
-                  name="features-block-features" id="filter-block-features" checked>
+                  name="features-block-features" id="filter-block-features">
                 <label for="filter-block-features">Блок преимуществ</label>
               </li>
               <li class="filter-option filter-checkbox">
@@ -98,12 +98,12 @@
               </li>
               <li class="filter-option filter-checkbox">
                 <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox"
-                  name="features-gallery" id="filter-gallery" checked>
+                  name="features-gallery" id="filter-gallery">
                 <label for="filter-gallery">Галерея</label>
               </li>
               <li class="filter-option filter-checkbox">
                 <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="features-box"
-                  id="filter-box" checked>
+                  id="filter-box">
                 <label for="filter-box">Корзина</label>
               </li>
             </ul>
@@ -122,8 +122,8 @@
             <li class="price-filter-item"><a href="#">По названию</a></li>
           </ul>
           <div class="up-down-button">
-            <a class="up" type="button" aria-label="Вниз"></a>
-            <a class="down" type="button" aria-label="Вверх"></a>
+            <a class="up" href="#"></a>
+            <a class="down" href="#"></a>
           </div>
         </div>
         <ul class="catalog-list">
@@ -132,7 +132,7 @@
             <div class="catalog-price">
               <h3><a class="catalog-caption" href="#">Sedona</a></h3>
               <p>Информационный сайт <br>для туристов</p>
-              <a class="catalog-button" href="#">9900</a>
+              <a class="catalog-button" href="#">9900 ₽</a>
             </div>
           </li>
           <li class="catalog-item">
@@ -140,7 +140,7 @@
             <div class="catalog-price">
               <h3><a class="catalog-caption" href="#">Pink App</a></h3>
               <p>Продуктовый лендинг <br>приложения для iOS и Android</p>
-              <a class="catalog-button" href="#">9900</a>
+              <a class="catalog-button" href="#">9900 ₽</a>
             </div>
           </li>
           <li class="catalog-item">
@@ -148,7 +148,7 @@
             <div class="catalog-price">
               <h3><a class="catalog-caption" href="#">Barbershop</a></h3>
               <p>Сайт салона красоты. <br>Для мужчин, да.</p>
-              <a class="catalog-button" href="#">9900</a>
+              <a class="catalog-button" href="#">9900 ₽</a>
             </div>
           </li>
           <li class="catalog-item">
@@ -156,7 +156,7 @@
             <div class="catalog-price">
               <h3><a class="catalog-caption" href="#">Mishka</a></h3>
               <p>Интернет-магазин <br>вязаных игрушек</p>
-              <a class="catalog-button" href="#">9900</a>
+              <a class="catalog-button" href="#">9900 ₽</a>
             </div>
           </li>
           <li class="catalog-item">
@@ -164,7 +164,7 @@
             <div class="catalog-price">
               <h3><a class="catalog-caption" href="#">A Plus</a></h3>
               <p>Лендинг курсов <br>повышения квалификации</p>
-              <a class="catalog-button" href="#">9900</a>
+              <a class="catalog-button" href="#">9900 ₽</a>
             </div>
           </li>
           <li class="catalog-item">
@@ -172,7 +172,7 @@
             <div class="catalog-price">
               <h3><a class="catalog-caption" href="#">Кваст</a></h3>
               <p>Промо-сайт производителя <br>крафтового кваса</p>
-              <a class="catalog-button" href="#">9900</a>
+              <a class="catalog-button" href="#">9900 ₽</a>
             </div>
           </li>
         </ul>
@@ -186,45 +186,31 @@
     </div>
   </main>
   <footer class="page-footer main-footer">
-    <div class="footer-map">
-      <section class="footer-contacts">
-        <div class="footer-contacts-wrapper">
-          <div class="footer-contacts-title">
-            <p>NЁRDS DESIGN STUDIO</p>
-          </div>
+    <div class="map-contacts">
+      <div class="map">
+        <div class="contacts">
+          <p>NЁRDS DESIGN STUDIO</p>
           <div class="footer-address-container">
             <address class="footer-address">191186, Санкт-Петербург, <br>ул. Б. Конюшенная, д. 19/8</address>
           </div>
           <div class="footer-phone-container">
             <a class="footer-phone" href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
           </div>
+          <a class="footer-button" href="form.html">Напишите нам</a>
         </div>
-        <div class="footer-button-container">
-          <a class="footer-button" href="#">Напишите нам</a>
-        </div>
-      </section>
+      </div>
     </div>
     <section class="footer-social-wrapper">
       <div class="footer-social">
         <ul class="footer-social-list">
           <li class="footer-social-item">
-            <a href="#">
-              <div class="footer-social-item-flex"><img class="vk" src="img/vk-icon.svg" width="26" height="15"
-                  alt="Вконтакте"></div>
-            </a>
+            <a class="vk" href="#"></a>
           </li>
           <li class="footer-social-item">
-            <a href="#">
-              <div class="footer-social-item-flex"><img class="fb" src="img/fb-icon.svg" width="12" height="22"
-                  alt="Фейсбук">
-              </div>
-            </a>
+            <a class="fb" href="#"></a>
           </li>
           <li class="footer-social-item">
-            <a href="#">
-              <div class="footer-social-item-flex"><img class="inst" src="img/insta-icon.svg" width="21" height="21"
-                  alt="Инстаграм"></div>
-            </a>
+            <a class="inst" href="#"></a>
           </li>
         </ul>
         <div class="footer-description">
